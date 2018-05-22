@@ -1,0 +1,51 @@
+
+@import "bootstrap";
+@import "font-awesome";
+@import "partials/variables.scss";
+@import "partials/mixins.scss";
+@import "partials/global.scss";
+@import "partials/utilities.scss";
+@import "partials/cards.scss";
+@import "partials/login.scss";
+@import "partials/footer.scss";
+@import "partials/form.scss";
+
+
+.sidenav {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #293b8e;
+    overflow-x: hidden;
+    padding-top: 20px;
+    color: white;
+}
+
+#main {
+    margin-left: 25%;
+}
+
+a {
+    color: #fff;
+  
+    &:visited {
+      color: rgb(182, 182, 182);
+    }
+  
+    &:hover {
+      color: #fff;
+      background-color: #000;
+    }
+  }
+
+  ul li {
+    font-size: 20px;
+    list-style-type: none;
+  }
+
+  td {
+      padding: 5px;
+  }

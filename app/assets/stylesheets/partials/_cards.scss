@@ -1,0 +1,58 @@
+// Styling for custom cards
+// Custom class for the background icon in card blocks
+.card-body-icon {
+  position: absolute;
+  z-index: 0;
+  top: -23px;
+  right: -18px;
+
+  font-size: 6em;
+  // @include rotate;
+
+  @media (min-width: 768px) and (max-width: 1200px) {
+    font-size: 4em;
+  }
+}
+
+// Override breakpoints for card columns to work well with sidebar
+.card-columns {
+  @media (min-width: 576px) {
+    column-count: 1;
+  }
+  @media (min-width: 768px) {
+    column-count: 2;
+  }
+  @media (min-width: 1200px) {
+    column-count: 2;
+  }
+}
+
+// Card sizing
+.card-body {
+  flex: 1 1 auto;
+  padding: 4rem;
+  padding-top: 3rem;
+}
+
+#welcome-cards .mr-5 {
+  font-size: 2em;
+
+  @media (min-width: 768px) and (max-width: 1200px) {
+    font-size: 1.5em;
+  }
+
+  @media (min-width: 990px) and (max-width: 1080px) {
+    font-size: 1em;
+  }
+
+  @media (min-width: 768px) and (max-width: 830px) {
+    font-size: 1em;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .quick-links-btn {
+    width: 100%;
+    display: block;
+  }
+}

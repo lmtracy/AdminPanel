@@ -1,3 +1,15 @@
+<div class="sidenav">
+<ul>
+<%= image_tag 'xavier_school_nav.png' %>
+<li><%= link_to 'Cohorts', cohorts_path %></li>
+<li><%= link_to 'Courses', courses_path %></li>
+<li><%= link_to 'Teachers', teachers_path %></li>
+<li><%= link_to 'Students', students_path %></li>
+</ul>
+</div>
+
+<div id="main">
+
 <p id="notice"><%= notice %></p>
 
 <h1>Students</h1>
@@ -5,6 +17,7 @@
 <table>
   <thead>
     <tr>
+      <th>Mutant name</th>
       <th>First name</th>
       <th>Last name</th>
       <th>Age</th>
@@ -16,6 +29,7 @@
   <tbody>
     <% @students.each do |student| %>
       <tr>
+        <td><%= student.mutant_name %></td>
         <td><%= student.first_name %></td>
         <td><%= student.last_name %></td>
         <td><%= student.age %></td>
@@ -31,3 +45,4 @@
 <br>
 
 <%= link_to 'New Student', new_student_path %>
+</div>

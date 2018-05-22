@@ -1,3 +1,14 @@
+<div class="sidenav">
+<ul>
+<%= image_tag 'xavier_school_nav.png' %>
+<li><%= link_to 'Cohorts', cohorts_path %></li>
+<li><%= link_to 'Courses', courses_path %></li>
+<li><%= link_to 'Teachers', teachers_path %></li>
+<li><%= link_to 'Students', students_path %></li>
+</ul>
+</div>
+
+<div id="main">
 <p id="notice"><%= notice %></p>
 
 <h1>Cohorts</h1>
@@ -20,6 +31,7 @@
         <td><%= cohort.start_date %></td>
         <td><%= cohort.end_date %></td>
         <td><%= cohort.course_id %></td>
+        <td><%= cohort.student_id %></td>
         <td><%= link_to 'Show', cohort %></td>
         <td><%= link_to 'Edit', edit_cohort_path(cohort) %></td>
         <td><%= link_to 'Destroy', cohort, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -31,3 +43,4 @@
 <br>
 
 <%= link_to 'New Cohort', new_cohort_path %>
+</div>

@@ -17,3 +17,9 @@ module AdminPanel
     # the framework and any gems in your application.
   end
 end
+
+# config.to_prepare do
+#   Clearance::PasswordsController.layout "my_passwords_layout"
+#   Clearance::SessionsController.layout "my_sessions_layout"
+#   Clearance::UsersController.layout "my_admin_layout"
+# end
