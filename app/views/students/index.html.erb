@@ -1,18 +1,8 @@
-<div class="sidenav">
-<ul>
-<%= image_tag 'xavier_school_nav.png' %>
-<li><%= link_to 'Cohorts', cohorts_path %></li>
-<li><%= link_to 'Courses', courses_path %></li>
-<li><%= link_to 'Teachers', teachers_path %></li>
-<li><%= link_to 'Students', students_path %></li>
-</ul>
-</div>
-
-<div id="main">
-
 <p id="notice"><%= notice %></p>
 
-<h1>Students</h1>
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active">Students</li>
+  </ol>
 
 <table>
   <thead>
@@ -45,4 +35,3 @@
 <br>
 
 <%= link_to 'New Student', new_student_path %>
-</div>

@@ -14,11 +14,13 @@
   <div class="field">
     <%= form.label :teacher_id %>
     <%= form.number_field :teacher_id %>
+    <%#<%= form.collection_select(:teacher_id, Teacher.all, :id, :first_name) %>
   </div>
 
   <div class="field">
-    <%= form.label :cohort_od %>
-    <%= form.number_field :cohort_od %>
+    <%= form.label :cohort_id %>
+    <%# <%= form.number_field :cohort_id %>
+    <%= form.collection_select(:cohort_id, Cohort.all, :id, :name) %>
   </div>
 
   <div class="actions">

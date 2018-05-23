@@ -25,5 +25,15 @@
   <%= @teacher.education %>
 </p>
 
+<p>
+  <strong>Cohort ID:</strong>
+  <%= @teacher.cohort_id %>
+</p>
+
+<p>
+  <strong>Cohort Name:</strong>
+  <%= @teacher.cohort.name %>
+</p>
+
 <%= link_to 'Edit', edit_teacher_path(@teacher) %> |
 <%= link_to 'Back', teachers_path %>

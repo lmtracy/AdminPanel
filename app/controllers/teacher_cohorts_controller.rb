@@ -69,6 +69,6 @@ class TeacherCohortsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def teacher_cohort_params
-      params.require(:teacher_cohort).permit(:teacher_id, :cohort_od)
+      params.require(:teacher_cohort).permit(:teacher_id, :cohort_id)
     end
 end

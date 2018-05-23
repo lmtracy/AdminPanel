@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: 'home#index'
+  root to: 'dashboard#index'
   resources :teacher_cohorts
   resources :student_cohorts
   resources :admins

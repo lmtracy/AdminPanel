@@ -16,13 +16,21 @@
 </p>
 
 <p>
-  <strong>Course:</strong>
+  <strong>Course # ID:</strong>
   <%= @cohort.course_id %>
 </p>
 
 <p>
-  <strong>Student ID:</strong>
-  <%= @cohort.student_id %>
+  <strong>Instructor:</strong>
+  
+    <% @teacher_cohorts.teachers.each do |teacher| %>
+    <%= teacher.id %> <%= teacher.first_name %> <%= teacher.last_name %></p>
+    <% end %>
+
+  <strong>Students Enrolled:</strong>
+    <% @student_cohorts.students.each do |student| %>
+    <%= student.id %>. <%= student.first_name %> <%= student.last_name %></p>
+    <% end %>
 </p>
 
 <%= link_to 'Edit', edit_cohort_path(@cohort) %> |
