@@ -10,11 +10,13 @@
   <%= @course.hours %>
 </p>
 
-
-<p>
- <%# <strong>Students Enrolled:</strong>%>
- 
+  <strong>Cohorts Associated:</strong></br>
+    <% @course.cohorts.each do |cohort| %>
+    <%= cohort.name %></p>
+    <% end %>
 </p>
+
+
 
 <%= link_to 'Edit', edit_course_path(@course) %> |
 <%= link_to 'Back', courses_path %>

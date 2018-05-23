@@ -11,11 +11,13 @@ class CohortsController < ApplicationController
   # GET /cohorts/1
   # GET /cohorts/1.json
   def show
+    @cohort = Cohort.find(params[:id])
   end
 
   # GET /cohorts/new
   def new
     @cohort = Cohort.new
+    @teacher = Teacher.new
   end
 
   # GET /cohorts/1/edit
